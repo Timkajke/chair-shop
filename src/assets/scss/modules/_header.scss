@@ -1,0 +1,48 @@
+.header {
+    $self: &;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #{$self}__logo-block {}
+
+        #{$self}__logo-title {
+            font-weight: bold;
+            font-size: 3.6rem;
+            line-height: 4.2rem;
+            letter-spacing: 0.1em;
+            color: $accent-color;
+        }
+
+        #{$self}__search-block {
+            display: flex;
+            align-items: center;
+            background-color: $light-color;
+            border-radius: 40px;
+            height: 40px;
+            padding: 0 20px;
+        }
+
+        #{$self}__search-input {
+            background: none;
+            outline: none;
+            border: none;
+            caret-color: $accent-color;
+        }
+
+        #{$self}__callback-block {
+            #{$self}__tel-number {
+                font-weight: normal;
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+                color: $title-text-color;
+                margin-right: 40px;
+            }
+            #{$self}__callback-button {
+                border-color: $accent-color;
+            }
+        }
+    }
+}

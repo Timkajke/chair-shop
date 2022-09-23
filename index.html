@@ -1,15 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store of computer chairs</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="src/assets/css/root.min.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </head>
-<body>
-    
 
+<body>
+
+    <div class="app">
+        <nav class="header-navigation wrapper">
+            <ul class="header-navigation__list">
+                <li class="header-navigation__item"><a class="header-navigation__link" href="#">Доставка</a></li>
+                <li class="header-navigation__item"><a class="header-navigation__link" href="#">Оплата</a></li>
+                <li class="header-navigation__item"><a class="header-navigation__link" href="#">Отзывы</a></li>
+                <li class="header-navigation__item"><a class="header-navigation__link" href="#">Вопрос-ответ</a></li>
+                <li class="header-navigation__item"><a class="header-navigation__link" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="header">
+        <div class="header__wrapper wrapper">
+            <a href="#" class="header__logo-block">
+                <img src="src/assets/icon/logo-icon.svg" alt="logo" class="header__logo-img">
+            </a>
+            <span class="header__logo-title">BEAUTY</span>
+            <div class="header__search-block">
+                <img src="src/assets/icon/search-icon.svg" alt="search" class="header__search-icon">
+                <input type="search" class="header__search-input">
+            </div>
+            <div class="header__callback-block">
+                <a href="tel:88121234567" class="header__tel-number">8 (812) 123-45-67</a>
+                <button class="header__callback-button default-button">Обратный звонок</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="slider">
+        <div class="slider__content">
+            <h1>Sample text</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://place-hold.it/800x300" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://place-hold.it/800x300" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://place-hold.it/800x300" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
 
 </body>
+
 </html>

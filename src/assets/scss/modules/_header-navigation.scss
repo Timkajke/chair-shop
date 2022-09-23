@@ -1,0 +1,21 @@
+.header-navigation {
+    $self: &; // кэширование название родительского класса в переменную
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #{$self}__item {
+            padding: 17px 0;
+            &:not(:last-child) { // применить НЕ для ПОСЛЕДНЕГО ЭЛЕМЕНТА
+                margin-right: 30px;
+            }
+            #{$self}__link {
+                font-size: 1.4rem; // поскольку для html указано у нас 10px (по умолч. 16), то будет 14px
+                line-height: 1.6rem;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.slider {
+    $self: &;
+    position: relative;
+    #{$self}__content {
+        position: absolute;
+        top: 48%;
+        left: 15%;
+        z-index: 1;
+    }
+}

@@ -1,3 +1,9 @@
-body {
-    background-color: aquamarine;
-}
+@import 'variables';
+
+@import 'reset';
+@import 'app';
+@import 'helpers/default_button';
+
+@import 'modules/header-navigation';
+@import 'modules/header';
+@import 'modules/slider';
